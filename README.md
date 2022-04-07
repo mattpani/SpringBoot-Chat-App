@@ -1,7 +1,10 @@
 # SpringBoot-Chat-App
 
 Java TCP communication & Spring boot Web Application.
+
 Apache Tomcat server. 
+
+PostgresSQL was used for database.
 
 There is a repo without Spring Boot, with just basic servlets. 
 
