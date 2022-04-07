@@ -8,7 +8,7 @@ PostgresSQL was used for database.
 
 There is a repo without Spring Boot, with just basic servlets. 
 
-PlautProjekt 
+BasicServlet-Chat-App
 
 There is even client side with simple Swing Gui with Chat room for all users and cipher & decipher function for text.
 
