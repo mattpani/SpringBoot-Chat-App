@@ -24,7 +24,7 @@ public class UserController {
     }
 
     @PostMapping(path = "login")
-    public String logIn(HttpServletRequest request, HttpServletResponse response){
+    public String logIn(HttpServletRequest request, HttpServletResponse response) {
         HttpSession session = request.getSession();
         Users user = userService.findByName(request.getParameter("user_name"));
 
@@ -39,7 +39,7 @@ public class UserController {
     }
 
     @PostMapping(path = "registration")
-    public String addUser(HttpServletRequest request, HttpServletResponse response){
+    public String addUser(HttpServletRequest request, HttpServletResponse response) {
         Users user = new Users();
 
         user.setUsername(request.getParameter("user_name"));

@@ -13,7 +13,7 @@ import java.net.Socket;
 import java.util.Vector;
 
 @Component
-public class SocketServer extends Thread{
+public class SocketServer extends Thread {
 
     private final int PORT = 7676;
     private final ServerSocket serverSocket = new ServerSocket(PORT);
@@ -34,31 +34,31 @@ public class SocketServer extends Thread{
         this.messageService = messageService;
         start();
     }
-    
-    public void run(){
-    	System.out.println("Init server socket ");
+
+    public void run() {
+        System.out.println("Init server socket ");
         utility.initHashMap();
-    	
+
         while (!serverSocket.isClosed()) {
             try {
-				clientSocket = serverSocket.accept();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-            
+                clientSocket = serverSocket.accept();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
             System.out.println(numOfClients);
-            ClientHandler handler = new ClientHandler(clientSocket,this.userService,this.messageService);
+            ClientHandler handler = new ClientHandler(clientSocket, this.userService, this.messageService);
             listOfClients.add(handler);
             handler.start();
             numOfClients++;
         }
-        
+
         try {
-			serverSocket.close();
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
-    }	
+            serverSocket.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
 
 
