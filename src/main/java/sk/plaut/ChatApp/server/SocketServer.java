@@ -15,14 +15,14 @@ import java.util.Vector;
 @Component
 public class SocketServer extends Thread {
 
+    public static Vector<ClientHandler> listOfClients = new Vector<>();
+
     private final int PORT = 7676;
     private final ServerSocket serverSocket = new ServerSocket(PORT);
     private final Utility utility = new Utility();
 
     private final UserService userService;
     private final MessageService messageService;
-
-    public static Vector<ClientHandler> listOfClients = new Vector<>();
 
     private Socket clientSocket;
     private int numOfClients = 1;

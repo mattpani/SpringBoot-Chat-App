@@ -18,12 +18,10 @@ public class MessageService {
         this.messageRepository = messageRepository;
     }
 
-    @GetMapping
     public List<Messages> getMessages(Long userId){
         return messageRepository.findByUserId(userId);
     }
 
-    @GetMapping
     public void addMessage(Messages message){
         messageRepository.save(message);
     }

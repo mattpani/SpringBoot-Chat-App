@@ -14,7 +14,7 @@ import java.io.PrintWriter;
 public class ClientMessageHandler {
 
 	private final  UserService userService;
-    private  final MessageService messageService;
+    private final MessageService messageService;
 
     public ClientMessageHandler(UserService userService, MessageService messageService) {
         this.userService = userService;

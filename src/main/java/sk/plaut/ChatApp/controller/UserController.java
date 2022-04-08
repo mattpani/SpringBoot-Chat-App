@@ -41,11 +41,10 @@ public class UserController {
     @PostMapping(path = "registration")
     public String addUser(HttpServletRequest request, HttpServletResponse response) {
         Users user = new Users();
-
         user.setUsername(request.getParameter("user_name"));
         user.setRoles(roleRepository.findByRoleId(1));
 
         request.getSession().setAttribute("regResult", user.getUsername() + " " + userService.addUser(user));
-        return "redirect:registration";
+        return "registration";
     }
 }
