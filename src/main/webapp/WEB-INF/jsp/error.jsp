@@ -10,7 +10,7 @@
 <head>
     <title>Title</title>
 </head>
-<body bgcolor="pink">
+<body bgcolor="#9acd32">
 <h1><%="Systemova chyba, kontaktuj .."%>
 </h1>
 <form action="http://localhost:8095/" method="get">

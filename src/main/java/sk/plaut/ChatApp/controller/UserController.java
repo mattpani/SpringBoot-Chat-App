@@ -31,7 +31,8 @@ public class UserController {
         if (user != null) {
             session.setAttribute("logedInUser", user);
             session.setAttribute("logedInInfo", "Si prihlaseny:" + user.getUsername());
-            return "index";
+            response.setHeader("index","index");
+            return "/index";
         } else {
             session.setAttribute("logedInInfo", "Pouzivatel nexistuje alebo zadal zle meno.");
             return "login";
@@ -47,4 +48,5 @@ public class UserController {
         request.getSession().setAttribute("regResult", user.getUsername() + " " + userService.addUser(user));
         return "registration";
     }
+
 }

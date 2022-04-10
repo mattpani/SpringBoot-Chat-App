@@ -5,11 +5,9 @@ import org.springframework.stereotype.Service;
 import sk.plaut.ChatApp.data.Roles;
 import sk.plaut.ChatApp.repository.RoleRepository;
 
-import javax.transaction.Transactional;
 import java.util.Optional;
 
 @Service
-@Transactional
 public class RoleService {
 
     private final RoleRepository roleRepository;

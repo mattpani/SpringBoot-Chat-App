@@ -5,7 +5,7 @@
 <head>
 <title>Plaut Projekt</title>
 </head>
-<body bgcolor="pink">
+<body bgcolor="#9acd32">
 	<div style="text-align: center">
 		<h1><%="Hlavna strana"%>
 		</h1>

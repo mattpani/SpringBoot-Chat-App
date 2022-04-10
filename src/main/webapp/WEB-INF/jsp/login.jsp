@@ -17,7 +17,7 @@
 		
 		<form action="login" method="post">
 			Meno: <input type="text" name="user_name"> 
-				  <input type="submit" value="Odoslat">
+				  <input id="semienko" type="submit" value="Odoslat">
 		</form>
 
 		<h2><c:out value="${logedInInfo}"/>	</h2>

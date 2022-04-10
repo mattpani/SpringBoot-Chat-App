@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <title>Vypis z DB</title>
 </head>
-<body bgcolor="pink">
+<body bgcolor="#9acd32">
 <div style="text-align: center">
     <h1>Výpis správ pre použivateľa</h1>
 

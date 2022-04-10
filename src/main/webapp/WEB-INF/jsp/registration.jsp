@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <title>Registration</title>
 </head>
-<body bgcolor="pink">
+<body bgcolor="#9acd32">
 	<div style="text-align: center">
 		<h1>Registracia použivateľa</h1>
 
