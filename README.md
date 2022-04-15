@@ -6,9 +6,9 @@ Apache Tomcat server.
 
 PostgresSQL was used for database.
 
-There is a repo without Spring Boot, with just basic servlets. 
+There is a repo without Spring Boot web app. 
 
-BasicServlet-Chat-App
+Chat-App
 
 There is even client side with simple Swing Gui with Chat room for all users and cipher & decipher function for text.
 
